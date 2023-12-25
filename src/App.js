@@ -6,12 +6,12 @@ import fire from './Components/Tic-Tac-Mechanical-Alarm-Clock-chosic.com_.mp3'
 
 
 function App() {
-  console.log(fire)
   const [value, setValue] = React.useState(15);
   const [wid, setWid] = React.useState(170);
   const [settings, setSettings] = React.useState(false);
   const [timeLeft, setTimeLeft] = React.useState(value*60)
   const [isPaused, setIsPaused] = React.useState(true)
+  const [flip, setFlip] = React.useState(0)
   const [play, { stop }] = useSound(fire);
 
   React.useEffect(()=>{
@@ -21,19 +21,10 @@ function App() {
   }, [value])
   
   React.useEffect(() => {
-  
     const myInterval = setInterval(() =>{
-      if(isPaused)
+
+      if(isPaused || timeLeft === 0)
         return
-      else if (timeLeft === 0)
-        {
-          play();
-          setTimeout(()=>{
-          stop();
-          setTimeLeft(value*60);
-          setIsPaused(true);
-          }, 10000)
-        }
       else
         setTimeLeft(pre => pre - 1)
     }
@@ -41,8 +32,19 @@ function App() {
   
     return () => clearInterval(myInterval)
   }
-  ,[isPaused, timeLeft])
+  ,[isPaused, flip])
   
+  React.useEffect(() =>{
+  if(timeLeft === 0)
+  {
+    setFlip(pre => pre+1)
+    play();
+    setTimeout(()=>{
+    stop();
+    setTimeLeft(value*60);
+    setIsPaused(true);
+    }, 10000)
+  }}, [timeLeft])
 
   const handleResize = () => {
     if(window.innerWidth <= 449)

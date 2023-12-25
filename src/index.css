@@ -53,6 +53,10 @@ button:hover{
   cursor: pointer;
   color: #2f9fc8;
 }
+button:disabled:hover{
+  cursor: auto;
+  color: #DEDDDE;
+}
 .bCon{
   margin-top: 30px ;
   width: 100%;
