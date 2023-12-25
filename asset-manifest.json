@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/promodoro-timer/static/css/main.f6ff204e.css",
-    "main.js": "/promodoro-timer/static/js/main.1bab10bd.js",
+    "main.js": "/promodoro-timer/static/js/main.aae99af4.js",
     "static/js/845.34048ee3.chunk.js": "/promodoro-timer/static/js/845.34048ee3.chunk.js",
     "static/media/Tic-Tac-Mechanical-Alarm-Clock-chosic.com_.mp3": "/promodoro-timer/static/media/Tic-Tac-Mechanical-Alarm-Clock-chosic.com_.abf8cd4a1f879694c728.mp3",
     "index.html": "/promodoro-timer/index.html",
     "main.f6ff204e.css.map": "/promodoro-timer/static/css/main.f6ff204e.css.map",
-    "main.1bab10bd.js.map": "/promodoro-timer/static/js/main.1bab10bd.js.map",
+    "main.aae99af4.js.map": "/promodoro-timer/static/js/main.aae99af4.js.map",
     "845.34048ee3.chunk.js.map": "/promodoro-timer/static/js/845.34048ee3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f6ff204e.css",
-    "static/js/main.1bab10bd.js"
+    "static/js/main.aae99af4.js"
   ]
 }
