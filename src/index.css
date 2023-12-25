@@ -1,13 +1,60 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App, html, body, #root{
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+circle
+{
+  stroke-width:30;
+  fill: none;
+  stroke: #DEDDDE;
+}
+
+.Circle{
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke-linecap: round;
+  stroke: #2f9fc8;
+  transition: stroke-dashoffset 1s linear
+}
+
+.Circle-text{
+  font: 6em sans-serif;
+  fill: #DEDDDE;
+  letter-spacing: 5px;
+  user-select: none;
+}
+
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(52, 52, 52);
+}
+button{
+  width: 120px;
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  color: #DEDDDE;
+  margin: 0 10px;
+}
+button:hover{
+  cursor: pointer;
+  color: white;
+}
+.bCon{
+  margin-top: 30px ;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
