@@ -7,7 +7,7 @@ import fire from './Components/Tic-Tac-Mechanical-Alarm-Clock-chosic.com_.mp3'
 
 function App() {
   console.log(fire)
-  const [value, setValue] = React.useState(0.5);
+  const [value, setValue] = React.useState(15);
   const [wid, setWid] = React.useState(170);
   const [settings, setSettings] = React.useState(false);
   const [timeLeft, setTimeLeft] = React.useState(value*60)
