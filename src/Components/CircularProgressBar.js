@@ -1,9 +1,8 @@
 import React from 'react'
 import useSound from 'use-sound';
-import fire from '../Components/Fire-Alarm-Communities-chosic.com_.mp3'
+import fire from '../Components/Tic-Tac-Mechanical-Alarm-Clock-chosic.com_.mp3'
 function CircularProgressBar({wid, value, setValue}) {
   const [play, { stop }] = useSound(fire);
-  play();
   const [timeLeft, setTimeLeft] = React.useState(value*60)
   const [isPaused, setIsPaused] = React.useState(true)
   let da = Math.PI * wid * 2;
@@ -22,10 +21,12 @@ function CircularProgressBar({wid, value, setValue}) {
         return
       else if (timeLeft === 0)
         {
+          play();
           setTimeout(()=>{
+          stop();
           setTimeLeft(value*60);
           setIsPaused(true);
-          }, 3000)
+          }, 10000)
         }
       else
         setTimeLeft(pre => pre - 1)
