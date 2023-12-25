@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/promodoro-timer/static/css/main.5bad4ffd.css",
-    "main.js": "/promodoro-timer/static/js/main.784b2341.js",
+    "main.css": "/promodoro-timer/static/css/main.f6ff204e.css",
+    "main.js": "/promodoro-timer/static/js/main.1bab10bd.js",
     "static/js/845.34048ee3.chunk.js": "/promodoro-timer/static/js/845.34048ee3.chunk.js",
     "static/media/Tic-Tac-Mechanical-Alarm-Clock-chosic.com_.mp3": "/promodoro-timer/static/media/Tic-Tac-Mechanical-Alarm-Clock-chosic.com_.abf8cd4a1f879694c728.mp3",
     "index.html": "/promodoro-timer/index.html",
-    "main.5bad4ffd.css.map": "/promodoro-timer/static/css/main.5bad4ffd.css.map",
-    "main.784b2341.js.map": "/promodoro-timer/static/js/main.784b2341.js.map",
+    "main.f6ff204e.css.map": "/promodoro-timer/static/css/main.f6ff204e.css.map",
+    "main.1bab10bd.js.map": "/promodoro-timer/static/js/main.1bab10bd.js.map",
     "845.34048ee3.chunk.js.map": "/promodoro-timer/static/js/845.34048ee3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5bad4ffd.css",
-    "static/js/main.784b2341.js"
+    "static/css/main.f6ff204e.css",
+    "static/js/main.1bab10bd.js"
   ]
 }
